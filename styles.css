@@ -7,42 +7,25 @@ body {
     padding: 0;
 }
 
-/* Hero section styling */
+/* Simplified hero section styling */
 .hero {
-    background-color: #004d40; /* Background color of the hero section */
-    padding: 20px 10px; /* Reduced padding for a more compact look */
+    padding: 20px;
     text-align: center;
 }
 
 .hero h2 {
-    margin: 0;
-    font-size: 1.8em; /* Slightly smaller font size */
+    font-size: 2em;
+    margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
     color: #f0f0f0; /* Off-white text color */
 }
 
 .hero p {
-    font-size: 1.1em; /* Slightly smaller font size */
+    font-size: 1em;
     color: #f0f0f0; /* Off-white text color */
+    max-width: 800px; /* Optional: limit width for better readability */
+    margin: 0 auto; /* Center the text */
 }
-
-.skills-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0; /* Adjusted margin */
-    display: inline-block; /* Keeps the list centered */
-}
-
-.skills-list li {
-    margin-bottom: 8px; /* Reduced margin for a more compact appearance */
-    font-size: 1em; /* Consistent font size */
-    color: #f0f0f0; /* Off-white text color */
-}
-
-.skills-list li strong {
-    color: #4db6ac; /* Teal color for categories */
-}
-
 
 
 /* Header styling */
