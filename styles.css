@@ -1,113 +1,154 @@
-/* styles.css */
+/* General body styling */
 body {
-    background-color: #004d00; /* Dark forest green */
-    color: #f8f8f8; /* Off-white text */
     font-family: Arial, sans-serif;
+    background-color: #003d34; /* Dark forest green background */
+    color: #f5f5f5; /* Off-white text color */
     margin: 0;
     padding: 0;
 }
 
+/* Header styling */
 header {
+    background-color: #002d27; /* Slightly darker green for header */
+    padding: 20px;
+    color: #f5f5f5;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #002d00; /* Slightly darker green for header */
 }
 
 .header-content h1 {
     margin: 0;
-    font-size: 2rem;
 }
 
-.header-content nav ul {
+nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
-.header-content nav ul li {
-    margin: 0 1rem;
+nav ul li {
+    margin: 0 10px;
 }
 
-.header-content nav ul li a {
-    color: #f8f8f8;
+nav ul li a {
+    color: #f5f5f5;
     text-decoration: none;
 }
 
-.linkedin-icon img {
-    width: 24px;
-    height: 24px;
+/* Hero section styling */
+.hero {
+    background-color: #004d40; /* Slightly lighter green */
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #003300; /* Darker green for hero section */
+.hero h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Project section styling */
+#projects {
+    padding: 20px;
 }
 
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .project-card {
-    background: #006600; /* Medium green for project cards */
-    padding: 1rem;
-    border-radius: 5px;
-    width: 300px;
-    text-align: center;
+    background-color: #004d40; /* Slightly lighter green */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.project-card h3 {
+    margin-top: 0;
 }
 
 .project-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #f8f8f8;
+    color: #4db6ac; /* Teal color for links */
     text-decoration: none;
-    background-color: #003300;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
 }
 
+/* Central section styling */
 .central-section {
+    padding: 20px;
+}
+
+.intro {
     text-align: center;
-    padding: 2rem;
 }
 
 .visualization-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    gap: 20px;
 }
 
 .visualization-card {
-    background: #006600;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 300px;
+    background-color: #004d40; /* Slightly lighter green */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .visualization-card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
+/* About section styling */
+#about {
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover;
+}
+
+/* Contact section styling */
+#contact {
+    padding: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #4db6ac; /* Teal color for links */
+    text-decoration: none;
+}
+
+/* Footer styling */
 footer {
-    background-color: #002d00;
-    color: #f8f8f8;
+    background-color: #002d27; /* Slightly darker green for footer */
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
+    color: #f5f5f5;
 }
 
 footer ul {
@@ -119,10 +160,10 @@ footer ul {
 }
 
 footer ul li {
-    margin: 0 1rem;
+    margin: 0 10px;
 }
 
 footer ul li a {
-    color: #f8f8f8;
+    color: #f5f5f5;
     text-decoration: none;
 }
