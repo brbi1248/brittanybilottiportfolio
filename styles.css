@@ -28,9 +28,8 @@ body {
 .skills-list {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
-    text-align: left; /* Align text to the left */
-    display: inline-block; /* Keep list centered with other content */
+    margin: 20px auto; /* Center the list and add margin */
+    display: inline-block; /* Ensure the list stays centered */
 }
 
 .skills-list li {
@@ -42,6 +41,13 @@ body {
 .skills-list li strong {
     color: #4db6ac; /* Teal color for categories */
 }
+
+.hero .skills-list {
+    text-align: left; /* Align text to the left inside the list */
+    max-width: 800px; /* Optional: limit the width for better alignment */
+    margin: 0 auto; /* Center the list */
+}
+
 
 /* Header styling */
 header {
