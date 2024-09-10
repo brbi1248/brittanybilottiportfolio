@@ -1,8 +1,8 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
     background-color: #003d34; /* Dark forest green background */
-    color: #f5f5f5; /* Off-white text color */
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
     margin: 0;
     padding: 0;
 }
@@ -10,18 +10,23 @@ body {
 /* Header styling */
 header {
     background-color: #002d27; /* Slightly darker green for header */
-    padding: 20px;
-    color: #f5f5f5;
+    padding: 10px 20px; /* Adjusted padding */
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .header-content h1 {
     margin: 0;
+    margin-left: 10px; /* Space between LinkedIn icon and name */
+    font-size: 1.5em; /* Adjust font size if needed */
+}
+
+nav {
+    margin-left: auto; /* Pushes the navigation to the right */
 }
 
 nav ul {
@@ -36,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f5f5f5;
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
     text-decoration: none;
 }
 
@@ -56,6 +61,8 @@ nav ul li a {
 .hero h2 {
     margin: 0;
     font-size: 2em;
+    font-family: 'Playfair Display', serif; /* Ensure h2 uses Playfair Display */
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
 }
 
 /* Project section styling */
@@ -77,6 +84,8 @@ nav ul li a {
 
 .project-card h3 {
     margin-top: 0;
+    font-family: 'Playfair Display', serif; /* Ensure project titles use Playfair Display */
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
 }
 
 .project-link {
@@ -126,7 +135,7 @@ footer {
     background-color: #002d27; /* Slightly darker green for footer */
     padding: 20px;
     text-align: center;
-    color: #f5f5f5;
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
 }
 
 footer ul {
@@ -142,6 +151,6 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #f5f5f5;
+    color: #f0f0f0; /* Off-white text color with a warmer tone */
     text-decoration: none;
 }
