@@ -16,7 +16,6 @@ body {
 .hero h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    font-family: 'Playfair Display', serif;
     color: #f0f0f0; /* Off-white text color */
 }
 
@@ -26,7 +25,6 @@ body {
     max-width: 800px; /* Optional: limit width for better readability */
     margin: 0 auto; /* Center the text */
 }
-
 
 /* Header styling */
 header {
@@ -38,6 +36,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .header-content h1 {
@@ -55,6 +54,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 nav ul li {
@@ -76,14 +76,6 @@ nav ul li a {
 .hero {
     background-color: #004d40; /* Slightly lighter green */
     padding: 50px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Playfair Display', serif; /* Ensure h2 uses Playfair Display */
-    color: #f0f0f0; /* Off-white text color with a warmer tone */
 }
 
 /* Project section styling */
@@ -93,7 +85,7 @@ nav ul li a {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
 }
 
@@ -105,7 +97,6 @@ nav ul li a {
 
 .project-card h3 {
     margin-top: 0;
-    font-family: 'Playfair Display', serif; /* Ensure project titles use Playfair Display */
     color: #f0f0f0; /* Off-white text color with a warmer tone */
 }
 
@@ -123,6 +114,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    text-align: center; /* Center text on smaller screens */
 }
 
 .profile-photo {
@@ -174,4 +167,26 @@ footer ul li {
 footer ul li a {
     color: #f0f0f0; /* Off-white text color with a warmer tone */
     text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack about section items */
+        text-align: center; /* Center text */
+    }
 }
