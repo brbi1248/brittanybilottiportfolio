@@ -7,8 +7,7 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items vertically */
 }
 
 .header-content h1 {
@@ -17,15 +16,19 @@ header {
     font-size: 1.5em; /* Adjust font size if needed */
 }
 
+.linkedin-icon {
+    margin-right: 10px; /* Add space to the right of the LinkedIn icon */
+}
+
 nav {
-    display: flex; /* Ensure navigation is in a row */
+    margin-left: auto; /* Pushes the navigation to the right */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* Ensure navigation is in a row */
 }
 
 nav ul li {
@@ -42,4 +45,3 @@ nav ul li a {
     width: 40px; /* Adjust the size as needed */
     height: auto; /* Maintain aspect ratio */
 }
-
